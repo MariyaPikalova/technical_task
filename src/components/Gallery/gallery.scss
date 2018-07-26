@@ -1,0 +1,40 @@
+.gallery-wrap {
+  width: 100%;
+  max-height: 513px;
+  display: flex;
+  padding-top: 72px;
+  margin-bottom: 110px;
+}
+ .gallery-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.news-item {
+ width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 0.4s;
+  }
+
+  &:hover:before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

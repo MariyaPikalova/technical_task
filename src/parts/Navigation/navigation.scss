@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  text-align: center;
+}
+.header__nav {
+  text-transform: uppercase;
+}
+.header__nav-list {
+  list-style-type: none;
+  padding-top: 7px;
+}
+.header__nav-item {
+  display: inline-block;
+  padding: 18px;
+}
+.header__nav-link {
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 5px;
+  //display: inline-block;
+}
+.header__nav-link:after, .header__nav-link:before {
+  transition: all 0.5s;
+}
+.header__nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: mediumvioletred;
+  height: 1px;
+}
+.header__nav-link:hover:after {
+  width: 100%;
+}
+.header__nav-link:hover {
+  color: mediumvioletred;
+  transition: 500ms;
+}

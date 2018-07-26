@@ -1,0 +1,70 @@
+.subscribe {
+  padding-top: 35px;
+  position: relative;
+}
+
+.subscribe-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 80px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-image {
+  background: url('../../images/bottom-bg.png') top center / cover no-repeat;
+  height: 377px;
+}
+
+.subscribe-title {
+  font-size: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 31px;
+  margin-bottom: 14px;
+  letter-spacing: 0.025em;
+}
+
+.subscribe-desc {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 44px;
+}
+
+.subscribe-form {
+  position: relative;
+}
+
+.subscribe-message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  margin-top: 4px;
+  padding: 5px 11px;
+  width: 310px;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.subscribe-result {
+  color: #ccc;
+
+  &.error {
+    color: red;
+  }
+
+  &.success {
+    color: green;
+  }
+}

@@ -1,0 +1,24 @@
+ .vacancy-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .vacancy-list{
+    width: calc(50%-5px);
+    display: flex;
+  }
+  .vacancy-item {
+    width: 50%;
+    margin-bottom: 24px;
+
+    &:nth-child(2n) {
+      padding-left: 12px;
+    }
+
+    &:nth-child(2n + 1) {
+      padding-right: 12px;
+    }
+  }
