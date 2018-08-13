@@ -22,3 +22,50 @@
       padding-right: 12px;
     }
   }
+ .vacancy-inner {
+   transition: border-color 0.3s, background 0.3s;
+   background: #f2f2f2;
+   border: 2px solid #f2f2f2;
+   padding: 26px 30px 23px;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   height: 100%;
+
+   .vacancy-item:hover & {
+     background: #fff;
+     border-color: #ccc;
+   }
+ }
+
+ .vacancy-icon {
+   margin-right: 40px;
+ }
+
+ .vacancy-intro {
+   color: #787878;
+   //font-family: $font-family-regular;
+   font-size: 14px;
+   line-height: 20px;
+ }
+
+ .vacancy-title {
+   //font-family: $font-family-medium;
+   font-size: 20px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #000;
+ }
+
+ .vacancy-link {
+   display: block;
+   color: #000;
+ }
+
+ .vacancy-desc {
+   color: #7d7d7d;
+   //font-family: $font-family-regular;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 24px;
+ }

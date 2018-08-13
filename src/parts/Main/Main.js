@@ -6,7 +6,7 @@ import './main.scss';
 export const Main = () => (
   <React.Fragment>
     <News />
-    <Vacancies />
-    <Gallery />
+    {/*<Vacancies />*/}
+    {/*<Gallery />*/}
   </React.Fragment>
 );
